@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --primary-bg: #1a2434;
+}
+
+body {
+  background-color: #f6f8fa;
+}
+
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+width: 100%;
+  height: 30vh;
+  gap: 20px;
+  background-color: var(--primary-bg);
+  color: white;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+header h1 {
+  font-size: 40px;
+}
+
+header div {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+main {
+  padding: 20px 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+section {
+  text-align: center;
+  width: 80vw;
+  padding: 50px 15px 40px 15px;
+  border-radius: 10px;
+  gap: 10px
+}
+
+.about {
+  background-color: #fff;
+}
+
+.about p {
+  color: #000000c7;
+  font-weight: 400;
+}
+
+.education {
+  background-color: #daf0ff;
+}
+
+.education h1  {
+  margin-bottom: 10px;
+}
+
+.education div, .skills div, .projects div, .contact-me div {
+  background-color: #fff;
+  width: 75%;
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+
+.skills {
+  background-color: #fef0bf;
+}
+
+.skills div {
+  width: 80%;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.projects {
+  background-color: #ebe6fe;
+}
+
+.projects div {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.contact-me {
+  background-color: #d7fce3;
+}
+
+.contact-me div {
+  font-weight: 500;
+}
+
+footer {
+  background-color: var(--primary-bg);
+  padding: 20px 10px;
+  text-align: center;
+  width: 100%;
+  height: 10vh;
+  color: white;
+}
