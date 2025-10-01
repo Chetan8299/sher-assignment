@@ -1,0 +1,47 @@
+@font-face {
+  font-family: super;
+  src: url(./Comic\ Hero.otf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1611604548018-d56bbd85d681?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);  
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 50px;
+  font-family: super;
+  color: rgb(228, 51, 51);
+}
+
+h1 {
+  font-size: 80px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: super;
+  color:white;
+  background-color: #045e9b;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #000;
+  transform: scale(1.05);
+}
