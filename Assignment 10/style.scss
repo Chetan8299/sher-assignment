@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+        
+
+
+  section {
+    height: 100%;
+    background-color: red;
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+   transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+
+  }
+
+  section:hover {
+    flex-grow: 2;
+   
+  }
+
+  section:nth-child(1) {
+    background-image: url(https://i.pinimg.com/1200x/4b/be/27/4bbe27b2b942334bf9e7a9b8211d1203.jpg);
+  }
+  section:nth-child(2) {
+    background-image: url(https://i.pinimg.com/736x/40/15/36/4015368ab3afc5b1e352fe56b8d356b2.jpg);
+  }
+  section:nth-child(3) {
+    background-image: url(https://i.pinimg.com/1200x/5d/7a/3a/5d7a3a64b39c20b86edb96ba012b7759.jpg);
+  }
+  section:nth-child(4) {
+    background-image: url(https://i.pinimg.com/736x/ad/b6/01/adb60152266ab5abc7baae44e71905e6.jpg);
+  }
+  section:nth-child(5) {
+    background-image: url(https://i.pinimg.com/736x/1a/9f/fd/1a9ffd3046ed4cb8a7e8bf30ee19caa7.jpg);
+  }
+}
