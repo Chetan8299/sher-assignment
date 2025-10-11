@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 110vh;
+    padding: 1vh 2vw;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "nav nav nav nav"
+        "top-left top-left top-right top-right"
+        "top-left top-left top-right top-right"
+        "top-left top-left top-right top-right"
+        "top-left top-left bottom-mid bottom-right"
+        "bottom-left bottom-left bottom-mid bottom-right"
+        "bottom-left bottom-left bottom-mid bottom-right";
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    height: 25px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 40%;
+    gap: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+button {
+  cursor: pointer;
+}
+
+.nav-btns, .hero-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hero-btns {
+  justify-content: start;
+}
+
+.nav-btns button:first-child, .hero-btns button:last-child {
+    border: none;
+    background-color: transparent;
+}
+
+.hero-btns button:last-child:hover {
+  text-decoration: underline;
+}
+
+.nav-btns button:last-child, .hero-btns button:first-child {
+    background-color: #2e303f;
+    color: white;
+    padding: 15px 50px 15px 15px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.nav-btns button:last-child span, .hero-btns button:first-child span {
+    position: absolute;
+    right: 2px;
+    background-color: #bec2fc;
+    color: #2e303f;
+    font-size: 1.1rem;
+    padding: 9px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-btns button:first-child span {
+  background-color: transparent;
+  color: white;
+  right: 20px;
+}
+
+#top-left {
+    grid-area: top-left;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+ .text-content span:first-child {
+    display: inline-block;
+    height: 60px;
+    width: 150px;
+    background-image: url(https://images.unsplash.com/photo-1755498948221-b1b80c366c2e?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: contain;
+    border-radius: 50px;
+}
+
+ .text-content span:last-child {
+    font-size: 1.5rem;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 15px 30px;
+    transform: translate(10%,-20%);
+}
+
+.text-content {
+    font-size: 5vw;
+}
+
+#top-right {
+    grid-area: top-right;
+    background: #000;
+    background-image: url(https://images.unsplash.com/photo-1747142955402-df70f6955d93?q=80&w=1460&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    border-radius: 30px;
+    background-size: cover;
+}
+
+#bottom-left {
+    grid-area: bottom-left;
+}
+
+#bottom-mid {
+    grid-area: bottom-mid;
+    background-image: url(https://images.unsplash.com/photo-1740135756200-edc70f515775?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center ;
+    border-radius: 30px;
+}
+
+#bottom-right {
+    grid-area: bottom-right;
+    background-image: url(https://images.unsplash.com/photo-1751958801579-6af86cdcd8e4?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 30px;
+}
+
+#bottom-left p {
+  font-size: 0.8rem;
+}
+
+
+.companies  {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 40px;
+  width: 70%;
+}
+
+.companies img {
+    width: 5vw;
+
+}
